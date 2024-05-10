@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A56</title>
+    <link rel="icon" href="pics/mlogo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+    <div class="red">
+        <div class="wrapper">
+            <h1> under construction</h1>
+        </div>
+    </div>
+    <div class="spacer layer1"></div>
+    <div class="dark">
+    <div class="wrapper2">
+    </div>
+    </div>
+    <div class="spacer layer2 "></div>
+    <div class="pink">
+        <div class="wrapper3">
+        </div>
+        </div>
+        <div id="page">
+        <a href="index.html"><button id="b3" class="pbtn"><</button></a>
+        <a href="index.html"><button id="b1" class="pbtn">1</button></a>
+        <a href="index2.html"><button id="b2" class="pbtn selected">2</button></a>
+        </div>    
+    </main>
+    <script>
+        b1.addEventListener('click',() =>{
+        b1.classList.add('selected');
+        b2.classList.remove('selected')});
+        b2.addEventListener('click',() =>{
+        b2.classList.add('selected');
+        b1.classList.remove('selected')});
+        b3.addEventListener('click',() =>{
+        b1.classList.add('selected');
+        b2.classList.remove('selected')});
+    </script>
+</body>
+</html>
