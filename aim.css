@@ -1,0 +1,78 @@
+*{
+    background-color: #1b1b1b;
+    margin:0;
+    overflow:hidden;
+}
+#container{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+}
+#game{
+    position:absolute;
+    width:1324px;
+    height:650px; 
+    padding-top:10px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:0px;
+    align-content: flex-start;   
+}
+#timer{
+    font-weight: bold;
+    margin:0px;
+    color:#fff;
+}
+.score{
+    color: yellow;
+    margin-left:10px;
+    font-weight: bold;
+}
+.final{
+    font-size: 10rem;
+    position: static;
+    font-weight: bold;
+    color:red;
+}
+.tile{
+    width:54px;
+    height: 54px;
+    text-align: center;
+    margin:0px;
+    font-size: 40pt;
+    justify-content: center;
+}
+.tit:active{
+    background: red;
+    box-shadow: 0 0 0 10px #dc4f4f44,
+    0 0 50px #dc4f4f,
+    0 0 100px #dc4f4f,
+}
+.tit{
+    background: #4fc3dc;
+    border-radius: 50%;
+    filter:blur(3px);
+    cursor:pointer;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+}
+.fade{
+    animation: fadeout 1s;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    background: red;
+    box-shadow: 0 0 0 10px #dc4f4f44,
+    0 0 50px #dc4f4f,
+    0 0 100px #dc4f4f;
+}
+@keyframes fadeout{
+    50%{
+        box-shadow: 0 0 0 60px #dc4f4f44,
+        0 0 90px #dc4f4f,
+        0 0 120px #dc4f4f,
+        0 0 150px #dc4f4f; 
+    }
+    100%{
+        opacity:0%;
+}}
