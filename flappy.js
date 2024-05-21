@@ -3,8 +3,8 @@ let bw = 1000;
 let bh = 2600;
 let context;
 
-let biw = 114;
-let bih = 124;
+let biw = 134;
+let bih = 144;
 let bix = bw/6;
 let biy = bh/2;
 
@@ -52,7 +52,7 @@ window.onload= function(){
     bpipeImg.src = "pics/bipe.png";
     
     requestAnimationFrame(update);
-    setInterval(placepipe,3000);
+    setInterval(placepipe,2700);
     document.addEventListener('click',movebird);
 }
 
