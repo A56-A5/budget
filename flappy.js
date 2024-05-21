@@ -3,8 +3,8 @@ let bw = 1000;
 let bh = 2600;
 let context;
 
-let biw = 134;
-let bih = 144;
+let biw = 114;
+let bih = 124;
 let bix = bw/6;
 let biy = bh/2;
 
@@ -41,7 +41,7 @@ window.onload= function(){
     context.fillRect(bird.x,bird.y,bird.width,bird.height);
 
     birdImg = new Image();
-    birdImg.src = "pics/flappy-wings.gif";
+    birdImg.src = "pics/birb.png";
     birdImg.onload = function(){
     context.drawImage(birdImg,bird.x,bird.y,bird.width,bird.height);
     }
