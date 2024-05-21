@@ -41,7 +41,7 @@ window.onload= function(){
     context.fillRect(bird.x,bird.y,bird.width,bird.height);
 
     birdImg = new Image();
-    birdImg.src = "pics/birb.png";
+    birdImg.src = "pics/bird.png";
     birdImg.onload = function(){
     context.drawImage(birdImg,bird.x,bird.y,bird.width,bird.height);
     }
