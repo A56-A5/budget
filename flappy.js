@@ -16,7 +16,7 @@ let bird = {
 }
 
 let pipearray = [];
-let pw = 300;
+let pw = 250;
 let ph = 1500;
 let px = bw;
 let py = 0;
@@ -115,7 +115,7 @@ function placepipe(){
     pipearray.push(bpipe);
 }
 function movebird(){
-    velocityy = -8;
+    velocityy = -9;
     if(gameover){
         bird.y = biy;
         pipearray = [];
