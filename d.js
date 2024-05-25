@@ -1,7 +1,7 @@
 //board
 let board;
 let boardWidth = 360;
-let boardHeight = 546;
+let boardHeight = 556;
 let context;
 
 //doodler
