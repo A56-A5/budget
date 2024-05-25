@@ -1,0 +1,35 @@
+*{
+    background-color: #333333; 
+}
+body {
+    text-align: center;
+}
+.btn{
+    padding:0;
+    height:30px;
+    width:50px;
+    border-radius: 5px;
+    border:none;
+    color:white;
+    background-color: #009578;
+    outline:none;
+    box-shadow: rgba(0,0,0,0.19)
+                0px 10px 20px, rgba(0,0,0,0.23) 0px 6px 6px ;
+}
+.btn:hover{
+    background-color:#008168;
+}
+.btn:active{
+    background-color:#006e58;
+    transform: scale(0.95)
+}
+.bx{
+    background:#009578;
+}
+.bx:hover{
+    background-color:#008168;
+}
+.bx:active{
+    background-color:#006e58;
+    transform: scale(0.95)
+}
