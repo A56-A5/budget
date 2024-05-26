@@ -101,3 +101,44 @@ header{
 .bottomBorder{
     border-bottom: 4px solid black;
 }
+@media screen and (max-width:500px){
+    header{
+        margin-left:130px;
+    }
+    #game{
+        margin-top: 20px;
+    }
+    #board{
+        height: 250px;
+        width:250px;
+        padding-top:0;
+        margin-top:50px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+    }
+    #buts{
+        margin-top: 60px;
+        margin-left: 5px;
+    }
+    #number-container{
+        margin-left:0px;
+        padding-left:5px;
+        width:40px;
+        margin-top: 5px;
+    }
+    .tile{
+        margin:0;
+        width:25px;
+        height:25px;
+        font-size:2rem;
+    }
+    .digits{
+        width:30px;
+        height:30px;
+        font-size:2rem;
+        margin-top: 0;
+        margin-left: 0px;
+    }
+}
