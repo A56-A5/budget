@@ -3,6 +3,9 @@ body {
     text-align: center;
     background-color: #333333;
 }
+#controls{
+    margin-top:30px;
+}
 
 h1 {
     color:#ffffff;
