@@ -1,7 +1,7 @@
 //board
 let board;
 let boardWidth = 360;
-let boardHeight = 556;
+let boardHeight = 596;
 let context;
 
 //doodler
@@ -100,6 +100,9 @@ function update() {
         let platform = platformArray[i];
         if (velocityY < 0 && doodler.y < boardHeight*3/4) {
             platform.y -= initialVelocityY; //slide platform down
+        }if(doodler.y < 10){
+            platform.y -= initialVelocityY;
+            doodler.y = boardHeight/2;
         }
         if (detectCollision(doodler, platform) && velocityY >= 0) {
             velocityY = initialVelocityY; //jump
