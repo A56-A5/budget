@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head a link="white" vlink="white">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="learn.css">
+    <title>Learn python</title>
+    <link rel="icon" href="pics/python.png">
+</head>
+<body>
+    <div class="container">
+        <div class="icons">
+            <a href="html.html"><img src="icons/html.png" title="html" height="50px" width="50px"></a>
+            <a href="css.html"><img src="icons/css.png" title="css" height="50px" width="50px"></a>
+            <a href="js.html"><img src="icons/js.png" title="javascript" height="50px" width="50px"></a>
+            <a href="php.html"><img src="icons/php.png" title="php" height="50px" width="50px"></a>
+            <a href="mysql.html"><img src="icons/mysql.png" title="mysql" height="50px" width="50px"></a>
+            <a href="python.html"><img src="icons/python.png" title="python" height="50px" width="50px"></a>
+            <a href="cplusplus.html"><img src="icons/c++.png" title="c++" height="50px" width="50px"></a>
+        </div><br>
+        <div class="wrapper">
+            <div class="wrapper-holder">
+                <div id="l1" class="imge"><img src="python/1.png"></div>
+                <div id="l2" class="imge"><img src="python/2.png"></div>
+                <div id="l3" class="imge"><div class="iimge"><img src="python/3(1).png"><img src="python/3(2).png"></div></div>
+                <div id="l4" class="imge"><img src="python/4.png"></div>
+                <div id="l5" class="imge"><img src="python/5.png"></div>
+                <div id="l6" class="imge"><img src="python/6.png"></div>
+                <div id="l7" class="imge"><img src="python/7.png"></div>
+                <div id="l8" class="imge"><img src="python/8.png"></div>
+                <div id="l9" class="imge"><img src="python/9.png"></div>
+                <div id="l10" class="imge"><img src="python/10.png"></div>
+                <div id="l11" class="imge"><img src="python/11.png"></div>
+                <div id="l12" class="imge"><img src="python/12.png"></div>
+                <div id="l13" class="imge"><img src="python/13.png"></div>
+                <div id="l14" class="imge"><img src="python/14.png"></div>
+                <div id="l15" class="imge"><img src="python/15.png"></div>
+                <div id="l16" class="imge"><div class="iimge"><img src="python/16(1).png"><img src="python/16(2).png"></div></div>
+            </div>
+        </div>
+        <div class="lesson-holder">
+            <a class="btn head" style="text-align: center;">python</a>
+            <a href="#l1" class="btn selected">data types</a>
+            <a href="#l2" class="btn">conversions</a>
+            <a href="#l3" class="btn">string methods</a>
+            <a href="#l4" class="btn">operators</a>
+            <a href="#l5" class="btn">lists</a>
+            <a href="#l6" class="btn">tuples</a>
+            <a href="#l7" class="btn">sets</a>
+            <a href="#l8" class="btn">dictionaries</a>
+            <a href="#l9" class="btn">if else</a>
+            <a href="#l10" class="btn">loops</a>
+            <a href="#l11" class="btn">functions</a>
+            <a href="#l12" class="btn">class & objects</a>
+            <a href="#l13" class="btn">inheritance</a>
+            <a href="#l14" class="btn">error handling</a>
+            <a href="#l15" class="btn">modules</a>
+            <a href="#l16" class="btn">file handling</a>
+        </div>
+    </div>
+    <script>
+        let btns = document.querySelectorAll(".btn") 
+        btns.forEach(btn => {
+            btn.addEventListener('click',()=>{
+                let ts = document.querySelectorAll(".selected");
+                ts.forEach(t => {
+                    t.classList.remove('selected');
+                })
+                btn.classList.add('selected');
+            });
+        }) 
+    </script>
+</body>
+</html>

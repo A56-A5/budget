@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head a link="white" vlink="white">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="learn.css">
+    <title>Learn css</title>
+    <link rel="icon" href="pics/css.png">
+</head>
+<body>
+    <div class="container">
+        <div class="icons">
+            <a href="html.html"><img src="icons/html.png" title="html" height="50px" width="50px"></a>
+            <a href="css.html"><img src="icons/css.png" title="css" height="50px" width="50px"></a>
+            <a href="js.html"><img src="icons/js.png" title="javascript" height="50px" width="50px"></a>
+            <a href="php.html"><img src="icons/php.png" title="php" height="50px" width="50px"></a>
+            <a href="mysql.html"><img src="icons/mysql.png" title="mysql" height="50px" width="50px"></a>
+            <a href="python.html"><img src="icons/python.png" title="python" height="50px" width="50px"></a>
+            <a href="cplusplus.html"><img src="icons/c++.png" title="c++" height="50px" width="50px"></a>
+        </div><br>
+        <div class="wrapper">
+            <div class="wrapper-holder">
+                <div id="l1" class="imge"><img src="css/1.png"></div>
+                <div id="l2" class="imge"><img src="css/2.png"></div>
+                <div id="l3" class="imge"><img src="css/3.png"></div>
+                <div id="l4" class="imge"><img src="css/4.png"></div>
+                <div id="l5" class="imge"><img src="css/5.png"></div>
+                <div id="l6" class="imge"><img src="css/6.png"></div>
+                <div id="l7" class="imge"><img src="css/7.png"></div>
+                <div id="l8" class="imge"><img src="css/8.png"></div>
+                <div id="l9" class="imge"><img src="css/9.png"></div>
+                <div id="l10" class="imge"><img src="css/10.png"></div>
+                <div id="l11" class="imge"><img src="css/11.png"></div>
+                <div id="l12" class="imge"><img src="css/12.png"></div>
+            </div>
+        </div>
+        <div class="lesson-holder">
+            <a class="btn head" style="text-align: center;">css</a>
+            <a href="#l1" class="btn selected">basics</a>
+            <a href="#l2" class="btn">fonts</a>
+            <a href="#l3" class="btn">border</a>
+            <a href="#l4" class="btn">background</a>
+            <a href="#l5" class="btn">margin</a>
+            <a href="#l6" class="btn">float</a>
+            <a href="#l7" class="btn">position</a>
+            <a href="#l8" class="btn">pseudo</a>
+            <a href="#l9" class="btn">shadow</a>
+            <a href="#l10" class="btn">transform</a>
+            <a href="#l11" class="btn">animation</a>
+            <a href="#l12" class="btn">media</a>
+        </div>
+    </div>
+    <script>
+        let btns = document.querySelectorAll(".btn") 
+        btns.forEach(btn => {
+            btn.addEventListener('click',()=>{
+                let ts = document.querySelectorAll(".selected");
+                ts.forEach(t => {
+                    t.classList.remove('selected');
+                })
+                btn.classList.add('selected');
+            });
+        }) 
+    </script>
+</body>
+</html>
