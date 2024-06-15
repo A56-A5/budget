@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" href="art/icon.png">
+
+</head>
+<body>
+  <div class="navbar">
+    <a id="1" class="btns bold" onclick="show(1,'traditional')"><i class='bx bx-pencil'></i>Pencil</a>
+    <a id="2" class="btns" onclick="show(2,'digital')"><i class='bx bx-edit-alt' ></i>Digital</a>
+    <a id="3" class="btns" onclick="show(3,'animation')"><i class='bx bx-tv'></i>Animation</a>
+    <a id="4" class="btns" onclick="show(4,'more')"><i class='bx bx-dots-vertical-rounded'></i>More</i></a>
+  </div>
+  <div id="container">
+    <div class="popup" style="display:none">
+      <span>&times;</span>
+      <img src="art/traditional/0.png">
+    </div>
+  <div id="traditional" class="row">
+    <div class="column">
+      <img src="art/traditional/1.png">
+      <img src="art/traditional/5.png">
+      <img src="art/traditional/9.png">
+      <img src="art/traditional/13.png">
+      <img src="art/traditional/17.png">
+      <img src="art/traditional/21.png">
+    </div>
+    <div class="column">
+      <img src="art/traditional/2.png">
+      <img src="art/traditional/6.png">
+      <img src="art/traditional/10.png">
+      <img src="art/traditional/14.png">
+      <img src="art/traditional/18.png">
+      
+    </div>
+    <div class="column">
+      <img src="art/traditional/3.png">
+      <img src="art/traditional/7.png">
+      <img src="art/traditional/11.png">
+      <img src="art/traditional/15.png">
+      <img src="art/traditional/19.png">
+      <img src="art/traditional/23.png">
+    </div>
+    <div class="column">
+      <img src="art/traditional/4.png">
+      <img src="art/traditional/8.png">
+      <img src="art/traditional/12.png">
+      <img src="art/traditional/16.png">
+      <img src="art/traditional/20.png">
+      <img src="art/traditional/24.png">
+      <img src="art/traditional/22.png">
+    </div>
+  </div>
+  <div id="digital" class="row hide">
+    <div class="column">
+      <img src="art/digital/1.png">
+      <img src="art/digital/5.png">
+      <img src="art/digital/9.png">
+      <img src="art/digital/13.png">
+      <img src="art/digital/17.png">
+      <img src="art/digital/21.png">
+    </div>
+    <div class="column">
+      <img src="art/digital/2.png">
+      <img src="art/digital/6.png">
+      <img src="art/digital/10.png">
+      <img src="art/digital/14.png">
+      <img src="art/digital/18.png">
+      <img src="art/digital/22.png">
+    </div>
+    <div class="column">
+      <img src="art/digital/4.png">
+      <img src="art/digital/8.png">
+      <img src="art/digital/12.png">
+      <img src="art/digital/16.png">
+      <img src="art/digital/20.png">
+      <img src="art/digital/24.png">
+    </div>
+    <div class="column">
+      <img src="art/digital/3.png">
+      <img src="art/digital/7.png">
+      <img src="art/digital/11.png">
+      <img src="art/digital/15.png">
+      <img src="art/digital/19.png">
+      <img src="art/digital/23.png">
+    </div>
+  </div>
+  <div id="animation" class="row hide">
+    <div class="column">
+      <img src="art/animation/1.gif">
+      <img src="art/animation/5.gif">
+      <img src="art/animation/9.gif">
+      <img src="art/animation/13.gif">
+      <img src="art/animation/17.gif">
+    </div>
+    <div class="column">
+      <img src="art/animation/4.gif">
+      <img src="art/animation/8.gif">
+      <img src="art/animation/12.gif">
+      <img src="art/animation/16.gif">
+      <img src="art/animation/18.gif">
+    </div>
+    <div class="column">
+      <img src="art/animation/2.gif">
+      <img src="art/animation/6.gif">
+      <img src="art/animation/10.gif">
+      <img src="art/animation/14.gif">
+    </div>
+    <div class="column">
+      <img src="art/animation/3.gif">
+      <img src="art/animation/7.gif">
+      <img src="art/animation/11.gif">
+      <img src="art/animation/15.gif">
+      <img src="art/animation/19.gif">
+    </div>
+  </div>
+  <div id="more" class="row hide">
+    <div class="column">
+      <img src="art/more/1.png">
+      <img src="art/more/5.png">
+      <img src="art/more/9.png">
+      <img src="art/more/13.png">
+      <img src="art/more/17.png">
+      <img src="art/more/21.png">
+    </div>
+    <div class="column">
+      <img src="art/more/2.png">
+      <img src="art/more/6.png">
+      <img src="art/more/10.png">
+      <img src="art/more/14.png">
+      <img src="art/more/18.png">
+      <img src="art/more/22.png">
+    </div>
+    <div class="column">
+      <img src="art/more/4.png">
+      <img src="art/more/8.png">
+      <img src="art/more/12.png">
+      <img src="art/more/16.png">
+      <img src="art/more/20.png">
+      <img src="art/more/24.png">
+    </div>
+    <div class="column">
+      <img src="art/more/3.png">
+      <img src="art/more/7.png">
+      <img src="art/more/11.png">
+      <img src="art/more/15.png">
+      <img src="art/more/19.png">
+      <img src="art/more/23.png">
+    </div>
+  </div>
+</div>
+  
+  <style>
+     /* The navigation bar */
+ .navbar {
+    overflow: hidden;display:flex;justify-content: right; align-items: right;flex-wrap:nowrap;
+    position:fixed;/* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    top:0; height: 60px; padding:5px;
+    margin-bottom: 5px;
+    
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center; cursor: pointer;
+    padding: 14px 16px;font-weight: bold;font-size: 1.5rem;
+    text-decoration: none; border-radius: 20px; margin-right:20px;margin-bottom: 5px;margin-top: 5px;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+  .bx{
+    background:none; 
+  }
+  
+  /* Main content */
+  #container{
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+  }
+  *{
+      margin:0;
+      padding:0;background:#fff;
+    }
+  .bold{
+    border-radius: 20px;background: #a1a1a1;
+  }
+  #container{
+    margin-left:5%;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 23%;
+    max-width: 23%;
+    padding: 0 4px;margin-right: 8px; margin-top:70px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    /*opacity:65%;*/
+  }
+  .popup{
+    position:fixed;
+    top:0;left:0;
+    background:rgba(0,0,0,0.9);
+    width:100%;height:100%;
+    z-index:100;
+  }
+  .popup span{
+    position: absolute;top:0;right:10px;
+    font-size: 40px;font-weight: bold;color:#fff;cursor:pointer;background:none;
+    z-index: 100;
+  }.popup img{
+    position: absolute;top:50%;left:50%;transform: translate(-50%,-50%);
+    border:5px solid #fff;
+    width:750px;border-radius: 5px;object-fit: cover;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .navbar{
+      height:80px;
+      width:min-content;
+    }.navbar a{
+      width:20%;margin:0;
+    }.column {
+      flex: 20%;
+      max-width: 20%;
+    }
+    .popup img{
+        width:95%;
+    }
+  }
+  .hide{
+    display:none;
+  }/* scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 4px;
+  }::-webkit-scrollbar-track {
+    background:rgba(0,0,0,0.9);
+  }::-webkit-scrollbar-thumb {
+    background: #555555;
+  }
+  </style>
+  <script>
+    function show(x,y){
+    let btns = document.querySelectorAll('.btns');
+      btns.forEach(btn => {
+        btn.classList.remove('bold');
+      });
+    let ctns = document.querySelectorAll('.row');
+    ctns.forEach(ctn => {
+        ctn.classList.add('hide')
+      });
+    let button = document.getElementById(x);
+    button.classList.add('bold');
+    let container = document.getElementById(y);
+    container.classList.remove('hide');
+    }
+
+    document.querySelectorAll('img').forEach(image =>{
+      image.onclick = () => {
+        document.querySelector('.popup').style.display = 'block';
+        document.querySelector('.popup img').src = image.getAttribute('src');
+      }
+    })
+    document.querySelector('.popup span').onclick = function() {
+      document.querySelector('.popup').style.display = 'none';
+    }
+  </script>
+  </body>
+</html>
